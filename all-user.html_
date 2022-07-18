@@ -1,0 +1,565 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleguide.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/boards.css">
+    <link rel="stylesheet" href="css/all-user.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/boards.js"></script>
+    <script type="text/javascript" src="js/All-user.js"></script>
+</head>
+
+<body class="boards-page">
+    <div class="wrapper">
+        <div class="fixed-sidebar">
+            <div class="logo">
+                <a href="/">
+                    <img src="images/logo.svg" title="logo" alt="logo" width="160" height="30" class="logo-expand">
+                    <img src="images/logo-mini.svg" title="logo" alt="logo" width="50" height="50"
+                        class="logo-closepand">
+                </a>
+            </div>
+            <div class="main-menu">
+                <ul class="menu">
+                    <li class="item-menu">
+                        <a href="boards.html">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.53988 2H7.91988C9.32988 2 10.4599 3.15 10.4599 4.561V7.97C10.4599 9.39 9.32988 10.53 7.91988 10.53H4.53988C3.13988 10.53 1.99988 9.39 1.99988 7.97V4.561C1.99988 3.15 3.13988 2 4.53988 2ZM4.53988 13.4697H7.91988C9.32988 13.4697 10.4599 14.6107 10.4599 16.0307V19.4397C10.4599 20.8497 9.32988 21.9997 7.91988 21.9997H4.53988C3.13988 21.9997 1.99988 20.8497 1.99988 19.4397V16.0307C1.99988 14.6107 3.13988 13.4697 4.53988 13.4697ZM19.46 2H16.08C14.67 2 13.54 3.15 13.54 4.561V7.97C13.54 9.39 14.67 10.53 16.08 10.53H19.46C20.86 10.53 22 9.39 22 7.97V4.561C22 3.15 20.86 2 19.46 2ZM16.08 13.4697H19.46C20.86 13.4697 22 14.6107 22 16.0307V19.4397C22 20.8497 20.86 21.9997 19.46 21.9997H16.08C14.67 21.9997 13.54 20.8497 13.54 19.4397V16.0307C13.54 14.6107 14.67 13.4697 16.08 13.4697Z"
+                                    fill="#030229" />
+                            </svg>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.33043 2.0004H16.6694C20.0704 2.0004 21.9904 3.9294 22.0004 7.3304V16.6704C22.0004 20.0704 20.0704 22.0004 16.6694 22.0004H7.33043C3.92943 22.0004 2.00043 20.0704 2.00043 16.6704V7.3304C2.00043 3.9294 3.92943 2.0004 7.33043 2.0004ZM12.0494 17.8604C12.4804 17.8604 12.8394 17.5404 12.8794 17.1104V6.9204C12.9194 6.6104 12.7704 6.2994 12.5004 6.1304C12.2194 5.9604 11.8794 5.9604 11.6104 6.1304C11.3394 6.2994 11.1904 6.6104 11.2194 6.9204V17.1104C11.2704 17.5404 11.6294 17.8604 12.0494 17.8604ZM16.6504 17.8604C17.0704 17.8604 17.4294 17.5404 17.4804 17.1104V13.8304C17.5094 13.5094 17.3604 13.2104 17.0894 13.0404C16.8204 12.8704 16.4804 12.8704 16.2004 13.0404C15.9294 13.2104 15.7804 13.5094 15.8204 13.8304V17.1104C15.8604 17.5404 16.2194 17.8604 16.6504 17.8604ZM8.21943 17.1104C8.17943 17.5404 7.82043 17.8604 7.38943 17.8604C6.95943 17.8604 6.59943 17.5404 6.56043 17.1104V10.2004C6.53043 9.8894 6.67943 9.5804 6.95043 9.4104C7.21943 9.2404 7.56043 9.2404 7.83043 9.4104C8.09943 9.5804 8.25043 9.8894 8.21943 10.2004V17.1104Z"
+                                        fill="#030229" />
+                                </g>
+                            </svg>
+                            <span>Log Time</span>
+                        </a>
+                    </li>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M21.7872 10.539C21.6518 10.6706 21.4681 10.7457 21.2747 10.7457C20.559 10.7457 19.9787 11.3095 19.9787 11.9953C19.9787 12.6858 20.5522 13.2467 21.2611 13.2543C21.6605 13.258 22 13.5286 22 13.9166V16.3265C22 18.3549 20.3075 20 18.2186 20H15.0658C14.7398 20 14.4758 19.7435 14.4758 19.4269V17.3975C14.4758 17.0029 14.1567 16.6929 13.7505 16.6929C13.354 16.6929 13.0251 17.0029 13.0251 17.3975V19.4269C13.0251 19.7435 12.7611 20 12.4362 20H5.78143C3.70213 20 2 18.3558 2 16.3265V13.9166C2 13.5286 2.33946 13.258 2.73888 13.2543C3.44874 13.2467 4.02128 12.6858 4.02128 11.9953C4.02128 11.3282 3.46035 10.8209 2.72534 10.8209C2.53191 10.8209 2.34816 10.7457 2.21277 10.6142C2.07737 10.4827 2 10.3042 2 10.1163V7.68291C2 5.65731 3.706 4 5.7911 4H12.4362C12.7611 4 13.0251 4.25649 13.0251 4.57311V6.97827C13.0251 7.36348 13.354 7.68291 13.7505 7.68291C14.1567 7.68291 14.4758 7.36348 14.4758 6.97827V4.57311C14.4758 4.25649 14.7398 4 15.0658 4H18.2186C20.3075 4 22 5.64416 22 7.67352V10.0411C22 10.229 21.9226 10.4075 21.7872 10.539ZM13.7505 14.8702C14.1567 14.8702 14.4758 14.5508 14.4758 14.1656V10.4075C14.4758 10.0223 14.1567 9.70288 13.7505 9.70288C13.354 9.70288 13.0251 10.0223 13.0251 10.4075V14.1656C13.0251 14.5508 13.354 14.8702 13.7505 14.8702Z"
+                                    fill="#030229" />
+                            </svg>
+                            <span>All Issues</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.81 2H16.191C19.28 2 21 3.78 21 6.83V17.16C21 20.26 19.28 22 16.191 22H7.81C4.77 22 3 20.26 3 17.16V6.83C3 3.78 4.77 2 7.81 2ZM8.08 6.66V6.65H11.069C11.5 6.65 11.85 7 11.85 7.429C11.85 7.87 11.5 8.22 11.069 8.22H8.08C7.649 8.22 7.3 7.87 7.3 7.44C7.3 7.01 7.649 6.66 8.08 6.66ZM8.08 12.74H15.92C16.35 12.74 16.7 12.39 16.7 11.96C16.7 11.53 16.35 11.179 15.92 11.179H8.08C7.649 11.179 7.3 11.53 7.3 11.96C7.3 12.39 7.649 12.74 8.08 12.74ZM8.08 17.31H15.92C16.319 17.27 16.62 16.929 16.62 16.53C16.62 16.12 16.319 15.78 15.92 15.74H8.08C7.78 15.71 7.49 15.85 7.33 16.11C7.17 16.36 7.17 16.69 7.33 16.95C7.49 17.2 7.78 17.35 8.08 17.31Z"
+                                        fill="#030229" />
+                                </g>
+                            </svg>
+                            <span>My Projects</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.4109 2.76862L16.4119 3.51824C19.1665 3.73413 20.9862 5.61119 20.9891 8.48975L21 16.9155C21.0039 20.054 19.0322 21.985 15.8718 21.99L8.15188 22C5.01119 22.004 3.01482 20.027 3.01087 16.8795L3.00001 8.55272C2.99606 5.65517 4.75153 3.78311 7.50617 3.53024L7.50518 2.78061C7.5042 2.34083 7.83001 2.01 8.26444 2.01C8.69886 2.009 9.02468 2.33883 9.02567 2.77861L9.02666 3.47826L14.8914 3.47027L14.8904 2.77062C14.8894 2.33084 15.2152 2.001 15.6497 2C16.0742 1.999 16.4099 2.32884 16.4109 2.76862ZM4.52148 8.86157L19.4696 8.84158V8.49175C19.4272 6.34283 18.349 5.21539 16.4138 5.04748L16.4148 5.81709C16.4148 6.24688 16.0801 6.5877 15.6556 6.5877C15.2212 6.5887 14.8943 6.24887 14.8943 5.81909L14.8934 5.0095L9.02863 5.01749L9.02962 5.82609C9.02962 6.25687 8.70479 6.5967 8.27036 6.5967C7.83594 6.5977 7.50913 6.25887 7.50913 5.82809L7.50815 5.05847C5.58286 5.25137 4.51753 6.38281 4.52049 8.55072L4.52148 8.86157ZM15.2399 13.4043V13.4153C15.2498 13.8751 15.625 14.2239 16.0801 14.2139C16.5244 14.2029 16.8789 13.8221 16.869 13.3623C16.8483 12.9225 16.4918 12.5637 16.0485 12.5647C15.5944 12.5747 15.2389 12.9445 15.2399 13.4043ZM16.0554 17.892C15.6013 17.882 15.235 17.5032 15.234 17.0435C15.2241 16.5837 15.5884 16.2029 16.0426 16.1919H16.0525C16.5165 16.1919 16.8927 16.5707 16.8927 17.0405C16.8937 17.5102 16.5185 17.891 16.0554 17.892ZM11.1721 13.4203C11.1919 13.8801 11.568 14.2389 12.0222 14.2189C12.4665 14.1979 12.821 13.8181 12.8012 13.3583C12.7903 12.9085 12.425 12.5587 11.9807 12.5597C11.5266 12.5797 11.1711 12.9605 11.1721 13.4203ZM12.0262 17.8471C11.572 17.8671 11.1968 17.5082 11.1761 17.0485C11.1761 16.5887 11.5305 16.2089 11.9847 16.1879C12.429 16.1869 12.7953 16.5367 12.8052 16.9855C12.8259 17.4463 12.4705 17.8261 12.0262 17.8471ZM7.10433 13.4553C7.12408 13.915 7.50025 14.2749 7.95442 14.2539C8.39872 14.2339 8.75317 13.8531 8.73243 13.3933C8.72256 12.9435 8.35725 12.5937 7.91196 12.5947C7.45779 12.6147 7.10334 12.9955 7.10433 13.4553ZM7.95837 17.8521C7.5042 17.8731 7.12901 17.5132 7.10828 17.0535C7.10729 16.5937 7.46273 16.2129 7.9169 16.1929C8.3612 16.1919 8.7275 16.5417 8.73737 16.9915C8.7581 17.4513 8.40365 17.8321 7.95837 17.8521Z"
+                                        fill="#030229" />
+                                </g>
+                            </svg>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.1798 4.41C17.1798 3.08 18.2598 2 19.5898 2C20.9198 2 21.9998 3.08 21.9998 4.41C21.9998 5.74 20.9198 6.82 19.5898 6.82C18.2598 6.82 17.1798 5.74 17.1798 4.41ZM13.3297 14.7593L16.2197 11.0303L16.1797 11.0503C16.3397 10.8303 16.3697 10.5503 16.2597 10.3003C16.1507 10.0503 15.9097 9.8803 15.6507 9.8603C15.3797 9.8303 15.1107 9.9503 14.9497 10.1703L12.5307 13.3003L9.75969 11.1203C9.58969 10.9903 9.38969 10.9393 9.18969 10.9603C8.99069 10.9903 8.81069 11.0993 8.68969 11.2593L5.73069 15.1103L5.66969 15.2003C5.49969 15.5193 5.57969 15.9293 5.87969 16.1503C6.01969 16.2403 6.16969 16.3003 6.33969 16.3003C6.57069 16.3103 6.78969 16.1893 6.92969 16.0003L9.43969 12.7693L12.2897 14.9103L12.3797 14.9693C12.6997 15.1393 13.0997 15.0603 13.3297 14.7593ZM15.4497 3.7803C15.4097 4.0303 15.3897 4.2803 15.3897 4.5303C15.3897 6.7803 17.2097 8.5993 19.4497 8.5993C19.6997 8.5993 19.9397 8.5703 20.1897 8.5303V16.5993C20.1897 19.9903 18.1897 22.0003 14.7897 22.0003H7.40069C3.99969 22.0003 1.99969 19.9903 1.99969 16.5993V9.2003C1.99969 5.8003 3.99969 3.7803 7.40069 3.7803H15.4497Z"
+                                        fill="#030229" />
+                                </g>
+                            </svg>
+                            <span>Report</span>
+                            <span class="counter">49</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18.7071 8.79633C18.7071 10.0523 19.039 10.7925 19.7695 11.6456C20.3231 12.2741 20.5 13.0808 20.5 13.956C20.5 14.8302 20.2128 15.6601 19.6373 16.3339C18.884 17.1417 17.8215 17.6573 16.7372 17.747C15.1659 17.8809 13.5937 17.9937 12.0005 17.9937C10.4063 17.9937 8.83505 17.9263 7.26375 17.747C6.17846 17.6573 5.11602 17.1417 4.36367 16.3339C3.78822 15.6601 3.5 14.8302 3.5 13.956C3.5 13.0808 3.6779 12.2741 4.23049 11.6456C4.98384 10.7925 5.29392 10.0523 5.29392 8.79633V8.3703C5.29392 6.68834 5.71333 5.58852 6.577 4.51186C7.86106 2.9417 9.91935 2 11.9558 2H12.0452C14.1254 2 16.2502 2.98702 17.5125 4.62466C18.3314 5.67916 18.7071 6.73265 18.7071 8.3703V8.79633ZM9.07367 20.0608C9.07367 19.5573 9.53582 19.3266 9.96318 19.2279C10.4631 19.1222 13.5093 19.1222 14.0092 19.2279C14.4366 19.3266 14.8987 19.5573 14.8987 20.0608C14.8738 20.5402 14.5926 20.9653 14.204 21.2352C13.7001 21.628 13.1088 21.8767 12.4906 21.9664C12.1487 22.0107 11.8128 22.0117 11.4828 21.9664C10.8636 21.8767 10.2723 21.628 9.76938 21.2342C9.37978 20.9653 9.09852 20.5402 9.07367 20.0608Z"
+                                        fill="#030229" />
+                                </g>
+                            </svg>
+                            <span>Bid</span>
+                        </a>
+                    </li>
+                    <li class="item-menu active">
+                        <a href="addtask.html">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.4022 13.5801C20.7599 13.7701 21.0358 14.0701 21.23 14.3701C21.6081 14.9901 21.5775 15.7501 21.2096 16.4201L20.4942 17.6201C20.1161 18.2601 19.4109 18.6601 18.6853 18.6601C18.3277 18.6601 17.9291 18.5601 17.6021 18.3601C17.3364 18.1901 17.0298 18.1301 16.7027 18.1301C15.691 18.1301 14.8428 18.9601 14.8121 19.9501C14.8121 21.1001 13.8719 22.0001 12.6967 22.0001H11.3068C10.1213 22.0001 9.18113 21.1001 9.18113 19.9501C9.16069 18.9601 8.31247 18.1301 7.30073 18.1301C6.96348 18.1301 6.6569 18.1901 6.40141 18.3601C6.07438 18.5601 5.6656 18.6601 5.31813 18.6601C4.58232 18.6601 3.87717 18.2601 3.49905 17.6201L2.7939 16.4201C2.41577 15.7701 2.39533 14.9901 2.77346 14.3701C2.93697 14.0701 3.24356 13.7701 3.59102 13.5801C3.87717 13.4401 4.06112 13.2101 4.23486 12.9401C4.74584 12.0801 4.43925 10.9501 3.57059 10.4401C2.55885 9.8701 2.23182 8.6001 2.81434 7.6101L3.49905 6.4301C4.09178 5.4401 5.35901 5.0901 6.38097 5.6701C7.27007 6.1501 8.42488 5.8301 8.94608 4.9801C9.10959 4.7001 9.20157 4.4001 9.18113 4.1001C9.16069 3.7101 9.27311 3.3401 9.46728 3.0401C9.8454 2.4201 10.5301 2.0201 11.2761 2.0001H12.7171C13.4734 2.0001 14.1581 2.4201 14.5362 3.0401C14.7201 3.3401 14.8428 3.7101 14.8121 4.1001C14.7917 4.4001 14.8837 4.7001 15.0472 4.9801C15.5684 5.8301 16.7232 6.1501 17.6225 5.6701C18.6342 5.0901 19.9117 5.4401 20.4942 6.4301L21.1789 7.6101C21.7716 8.6001 21.4446 9.8701 20.4227 10.4401C19.554 10.9501 19.2474 12.0801 19.7686 12.9401C19.9321 13.2101 20.1161 13.4401 20.4022 13.5801ZM9.10959 12.0101C9.10959 13.5801 10.4075 14.8301 12.012 14.8301C13.6164 14.8301 14.8837 13.5801 14.8837 12.0101C14.8837 10.4401 13.6164 9.1801 12.012 9.1801C10.4075 9.1801 9.10959 10.4401 9.10959 12.0101Z"
+                                        fill="#030229" />
+                                </g>
+                            </svg>
+                            <span>Add Task</span>
+                        </a>
+                    </li>
+                    <li class="item-menu close-menu">
+                        <a href="#" class="collapsemenu">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20">
+                                <path
+                                    d="M504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zM256 472c-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216zm32-120l-96-96 96-96v192m32-192c0-28.4-34.5-42.8-54.6-22.6l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c20.1 20.1 54.6 5.9 54.6-22.6V160z"
+                                    fill="#030229" />
+                            </svg>
+                            <span>Collapse menu</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info-login">
+                <div class="inner inline-center space-between">
+                    <div class="inline-center">
+                        <div class="avatar">
+                            <img src="images/avatar.png" width="45" height="45">
+                        </div>
+                        <div class="info">
+                            <div class="name">Party Eco</div>
+                            <div class="role">Administrator</div>
+                        </div>
+                    </div>
+                    <a href="logout">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.4">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.24596 8.35841C6.88138 8.35841 6.5931 8.64175 6.5931 9.00008C6.5931 9.35008 6.88138 9.64175 7.24596 9.64175H12.3332V13.6251C12.3332 15.6667 10.6459 17.3334 8.56016 17.3334H4.43104C2.35376 17.3334 0.666504 15.6751 0.666504 13.6334V4.37508C0.666504 2.32508 2.36224 0.666748 4.43952 0.666748H8.57712C10.6459 0.666748 12.3332 2.32508 12.3332 4.36675V8.35841H7.24596ZM15.3584 6.11692L17.7917 8.54192C17.9167 8.66692 17.9834 8.82525 17.9834 9.00025C17.9834 9.16692 17.9167 9.33359 17.7917 9.45025L15.3584 11.8753C15.2334 12.0003 15.0667 12.0669 14.9084 12.0669C14.7417 12.0669 14.575 12.0003 14.45 11.8753C14.2 11.6253 14.2 11.2169 14.45 10.9669L15.7834 9.64192H12.3334V8.35859H15.7834L14.45 7.03359C14.2 6.78359 14.2 6.37525 14.45 6.12525C14.7 5.86692 15.1084 5.86692 15.3584 6.11692Z"
+                                    fill="#030229" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="entry-header entry-all">
+                <h1>All users</h1>
+                <button class="button-user inner add_project  clickpopup" data-target=".addproject"><img
+                        src="icon/Plus.png" class="icon-plus" />Add user</button>
+            </div>
+            <table class="table-all">
+                <thead>
+                    <tr>
+                        <th class="row-title">No</th>
+                        <th>ID</th>
+                        <th>Full Name <img src="icon/Arrow - Down 2.png"></th>
+                        <th>lương <img src="icon/Arrow - Down 2.png"></th>
+                        <th>Point Khoán <img src="icon/Arrow - Down 2.png"></th>
+                        <th>Gia nhập từ <img src="icon/Arrow - Down 2.png"></th>
+                        <th>Chính thức từ <img src="icon/Arrow - Down 2.png"></th>
+                        <th>Điện thoại</th>
+                        <th>SlackID</th>
+                        <th>Ngày sinh</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="backgr-table">
+                        <td class="row-title">1</td>
+                        <td>2512</td>
+                        <td class="row-table"><span class="description-span">DEV</span>
+                            <div class="img-table">
+                                <div class="img-spacing">
+                                    <img src="images/image.png" />
+                                </div>
+                                <div>
+                                    Thục Quyên <br /><span>user@gmail.com</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>20,000,000</td>
+                        <td>0.00</td>
+                        <td>12/13/2014</td>
+                        <td>12/13/2014</td>
+                        <td>0992827128</td>
+                        <td>U324R7VC4</td>
+                        <td>01/01/1990</td>
+                        <td><img src="images/Menu.png" /></td>
+                    </tr>
+                    <tr class="backgr-table">
+                        <td class="row-title">2</td>
+                        <td>2512</td>
+                        <td class="row-table"><span class="description-span">DEV</span>
+                            <div class="img-table">
+                                <div class="img-spacing">
+                                    <img src="images/image.png" />
+                                </div>
+                                <div>
+                                    Thục Quyên <br /><span>user@gmail.com</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>20,000,000</td>
+                        <td>0.00</td>
+                        <td>12/13/2014</td>
+                        <td>12/13/2014</td>
+                        <td>0992827128</td>
+                        <td>U324R7VC4</td>
+                        <td>01/01/1990</td>
+                        <td><img src="images/Menu.png" /></td>
+                    </tr>
+                    <tr class="backgr-table">
+                        <td class="row-title">3</td>
+                        <td>2512</td>
+                        <td class="row-table"><span class="description-span">DEV</span>
+                            <div class="img-table">
+                                <div class="img-spacing">
+                                    <img src="images/image.png" />
+                                </div>
+                                <div>
+                                    Thục Quyên <br /><span>user@gmail.com</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>20,000,000</td>
+                        <td>0.00</td>
+                        <td>12/13/2014</td>
+                        <td>12/13/2014</td>
+                        <td>0992827128</td>
+                        <td>U324R7VC4</td>
+                        <td>01/01/1990</td>
+                        <td><img src="images/Menu.png" /></td>
+                    </tr>
+                    <tr class="backgr-table">
+                        <td class="row-title">4</td>
+                        <td>2512</td>
+                        <td class="row-table"><span class="description-span">DEV</span>
+                            <div class="img-table">
+                                <div class="img-spacing">
+                                    <img src="images/image.png" />
+                                </div>
+                                <div>
+                                    Thục Quyên <br /><span>user@gmail.com</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>20,000,000</td>
+                        <td>0.00</td>
+                        <td>12/13/2014</td>
+                        <td>12/13/2014</td>
+                        <td>0992827128</td>
+                        <td>U324R7VC4</td>
+                        <td>01/01/1990</td>
+                        <td><img src="images/Menu.png" /></td>
+                    </tr>
+                    <tr class="backgr-table">
+                        <td class="row-title">5</td>
+                        <td>2512</td>
+                        <td class="row-table"><span class="description-span">DEV</span>
+                            <div class="img-table">
+                                <div class="img-spacing">
+                                    <img src="images/image.png" />
+                                </div>
+                                <div>
+                                    Thục Quyên <br /><span>user@gmail.com</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>20,000,000</td>
+                        <td>0.00</td>
+                        <td>12/13/2014</td>
+                        <td>12/13/2014</td>
+                        <td>0992827128</td>
+                        <td>U324R7VC4</td>
+                        <td>01/01/1990</td>
+                        <td><img src="images/Menu.png" /></td>
+                    </tr>
+                    <tr class="backgr-table">
+                        <td class="row-title">6</td>
+                        <td>2512</td>
+                        <td class="row-table"><span class="description-span">DEV</span>
+                            <div class="img-table">
+                                <div class="img-spacing">
+                                    <img src="images/image.png" />
+                                </div>
+                                <div>
+                                    Thục Quyên <br /><span>user@gmail.com</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>20,000,000</td>
+                        <td>0.00</td>
+                        <td>12/13/2014</td>
+                        <td>12/13/2014</td>
+                        <td>0992827128</td>
+                        <td>U324R7VC4</td>
+                        <td>01/01/1990</td>
+                        <td><img src="images/Menu.png" /></td>
+                    </tr>
+                    <tr class="backgr-table">
+                        <td class="row-title">7</td>
+                        <td>2512</td>
+                        <td class="row-table"><span class="description-span">DEV</span>
+                            <div class="img-table">
+                                <div class="img-spacing">
+                                    <img src="images/image.png" />
+                                </div>
+                                <div>
+                                    Thục Quyên <br /><span>user@gmail.com</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>20,000,000</td>
+                        <td>0.00</td>
+                        <td>12/13/2014</td>
+                        <td>12/13/2014</td>
+                        <td>0992827128</td>
+                        <td>U324R7VC4</td>
+                        <td>01/01/1990</td>
+                        <td><img src="images/Menu.png" /></td>
+                    </tr>
+                    <tr class="backgr-table">
+                        <td class="row-title">8</td>
+                        <td>2512</td>
+                        <td class="row-table"><span class="description-span">DEV</span>
+                            <div class="img-table">
+                                <div class="img-spacing">
+                                    <img src="images/image.png" />
+                                </div>
+                                <div>
+                                    Thục Quyên <br /><span>user@gmail.com</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>20,000,000</td>
+                        <td>0.00</td>
+                        <td>12/13/2014</td>
+                        <td>12/13/2014</td>
+                        <td>0992827128</td>
+                        <td>U324R7VC4</td>
+                        <td>01/01/1990</td>
+                        <td><img src="images/Menu.png" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example ">
+                <ul class="pagination justify-content-center navi-custom">
+                    <li class="page-item ">
+                        <a class="page-link  navi-all-user page-link-custom" href="#" tabindex="-1"> <img
+                                class="button-click" src="images/left.png" />Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link navi-all-user" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link navi-all-user" href="#">2</a></li>
+                    <li class="page-item navi-all-user active">
+                        <span class="page-link ">
+                            3
+                        </span>
+                    </li>
+                    <li class="page-item"><a class="page-link navi-all-user" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link navi-all-user" href="#">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link navi-all-user page-link-custom" href="#">Next <img src="images/right.png"
+                                class="button-click" /></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="modal addproject" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-custom" role="document">
+            <div class="modal-content modal-content-user">
+                <div class="modal-body modal-body-custom">
+                    <button type="button" class="close close-user-popup" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="inner">
+                        <h2 class="title-popup-user">
+                            Add Project
+                        </h2>
+
+                        <form name="add_project" method="POST" class="form-images form-img-show" id="get1">
+                            <div class="form row row-dialog-user">
+                                <div class="col col-all-user col-all-user-right" style="padding-right: 92px;">
+                                    <div class="title-dialog-user">Username</div>
+                                    <div class="input-group mb-4">
+                                        <input type="text" class="form-control" placeholder="timbershaw"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="mt-2 title-dialog-user">Fullname</div>
+                                    <div class="input-group mb-4">
+                                        <input type="text" class="form-control" placeholder="Nguyễn Trường Minh Anh"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="mt-2 title-dialog-user">SlackID</div>
+                                    <div class="input-group mb-4">
+                                        <input type="text" class="form-control" placeholder="2817234819"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="mt-2 title-dialog-user">Phone number</div>
+                                    <div class="input-group mb-4">
+                                        <input type="text" class="form-control" placeholder="0928 827 912"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <span class="title-user">
+                                        Số phone dùng để liên lạc với dev trong trường hợp dự án cần thông tin gấp hoặc
+                                        dev không trả lời qua skype. Nên hãy lấy số phone của dev thay vì nhập
+                                        random.</span>
+                                </div>
+
+                                <div class="col col-all-user">
+                                    <div class="title-dialog-user">Password</div>
+                                    <div class="input-group mb-4">
+                                        <input class="form-control password" id="password" class="block mt-1 w-full"
+                                            type="password" name="password" />
+                                        <i class="far fa-eye-slash icon-eye-pass" id="togglePassword"
+                                            style="cursor: pointer"></i>
+                                    </div>
+                                    <div class="mt-2 title-dialog-user">Email</div>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="timbershaws@gmail.com"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <span class="mb-3 title-user">Email này được dùng để nhận các thông báo về việc báo
+                                        cáo hàng ngày nên hãy
+                                        nhập email có tồn tại.</span>
+                                    <div class="mt-3 title-dialog-user">Note</div>
+                                    <div class="input-group mb-4">
+                                        <input type="text" class="form-control input-all"
+                                            placeholder="Add some description of the user" aria-label="Username"
+                                            aria-describedby="basic-addon1">
+                                    </div>
+
+                                    <div class=" d-flex justify-content-end"
+                                        style="margin-top: 90px;margin-bottom: 27px;">
+                                        <button type="button" class="btn btn-secondary btn-dialog-user"
+                                            data-dismiss="modal"
+                                            style="color: #778CA2;background: #F2F4F6;margin-right: 36px;">Cancel</button>
+                                        <button type="button" class="btn btn-primary btn-success btn-dialog-user"
+                                            id="click-test">Next</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+                        <form name="add_project" method="POST" class="form-images form-img-none" id="get2">
+                            <div class="form row row-dialog-user">
+                                <div class="col-6 col-all-user col-all-user-right">
+                                    <div class="image-upload-wrap">
+                                        <input class="file-upload-input" type='file' onchange="readURL(this);"
+                                            accept="image/*" />
+                                        <div class="drag-text">
+                                            <p><img src="images/ico.png" style="padding-right: 7px;" />Upload user’s
+                                                avatar
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="file-upload-content">
+                                        <img class="file-upload-image" src="#" alt="your image" />
+                                        <div class="image-title-wrap">
+                                            <button type="button" onclick="removeUpload()" class="remove-image">Remove
+                                                <span class="image-title">Uploaded Image</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="title-dialog-user">Username1</div>
+                                    <select style="margin-top:1px; width: 100%; height: 50px;border: 1px solid #D8E0F0;
+                                            color: #7D8592;">
+                                        <option value="0">Select car:</option>
+                                        <option value="1">Audi</option>
+                                        <option value="2">BMW</option>
+                                        <option value="3">Citroen</option>
+                                        <option value="4">Ford</option>
+                                        <option value="5">Honda</option>
+                                        <option value="6">Jaguar</option>
+                                        <option value="7">Land Rover</option>
+                                        <option value="8">Mercedes</option>
+                                        <option value="9">Mini</option>
+                                        <option value="10">Nissan</option>
+                                        <option value="11">Toyota</option>
+                                        <option value="12">Volvo</option>
+                                    </select>
+                                    <div class="mt-2 title-dialog-user">Birthday</div>
+                                    <div class="input-group mb-4">
+                                        <div class="input-icons">
+                                            <input type="date" class="date" placeholder="Select Date">
+
+                                            <!-- <i class="bi bi-calendar inline"></i> -->
+                                        </div>
+                                    </div>
+                                    <div class="mt-2 title-dialog-user">Ngày tham gia</div>
+                                    <div class="input-group mb-4">
+                                        <div class="input-icons">
+                                            <input type="date" class="date1" placeholder="Select Date">
+
+                                            <!-- <i class="bi bi-calendar inline"></i> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-all-user">
+                                    <div class="title-dialog-user">Password</div>
+                                    <select style="margin-top:1px; width: 100%; height: 50px;border: 1px solid #D8E0F0;
+                                            color: #7D8592;">
+                                        <option value="0">Select car:</option>
+                                        <option value="1">Audi</option>
+                                        <option value="2">BMW</option>
+                                        <option value="3">Citroen</option>
+                                        <option value="4">Ford</option>
+                                        <option value="5">Honda</option>
+                                        <option value="6">Jaguar</option>
+                                        <option value="7">Land Rover</option>
+                                        <option value="8">Mercedes</option>
+                                        <option value="9">Mini</option>
+                                        <option value="10">Nissan</option>
+                                        <option value="11">Toyota</option>
+                                        <option value="12">Volvo</option>
+                                    </select>
+                                    <div class="mt-2 title-dialog-user">Email</div>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="timbershaws@gmail.com"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="mt-3 title-dialog-user">Note</div>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="timbershaws@gmail.com"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class=" d-flex justify-content-end"
+                                        style="margin-top: 90px;margin-bottom: 27px;">
+                                        <button type="button" class="btn btn-secondary btn-dialog-user"
+                                            data-dismiss="modal"
+                                            style="color: #778CA2;background: #F2F4F6;margin-right: 36px;"
+                                            id="click-test1">Cancel</button>
+                                        <button type="button" class="btn btn-primary btn-success btn-dialog-user"
+                                            id="click-test">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

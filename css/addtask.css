@@ -1,0 +1,17 @@
+.block-text h3 {
+    margin: 45px 0 16px;
+    color: #0A1629;
+}
+
+.block-text .action {
+    display: flex;
+}
+
+.block-text {
+    padding-top: 72px;
+    padding-bottom: 70px;
+}
+
+.action .btn-main {
+    margin: auto;
+}

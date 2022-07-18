@@ -1,0 +1,100 @@
+.addtask .btn-main {
+    min-width: 122px;
+    justify-content: center;
+}
+
+.tab li {
+    margin: 0;
+}
+
+.tab .active a {
+    background: #0E8A3E;
+    color: #fff;
+}
+
+.tab a {
+    padding: 6.5px 20px;
+    background-color: #fff;
+    font-size: 14px;
+    opacity: 1;
+    color: #030229;
+}
+
+.tab {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.entry-middle {
+    margin-top: 36px;
+    flex-wrap: wrap;
+}
+
+.form-search input {
+    width: 100%;
+    padding: 12px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #4D4C69;
+}
+
+.form-search input[type="search"]::-webkit-search-decoration,
+.form-search input[type="search"]::-webkit-search-cancel-button,
+.form-search input[type="search"]::-webkit-search-results-button,
+.form-search input[type="search"]::-webkit-search-results-decoration {
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+}
+
+.form-search {
+    max-width: 320px;
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.submit-search {
+    position: absolute;
+    right: 5px;
+    padding: 12px;
+    border: 0;
+    background: none;
+}
+
+.entry-header .btn-main {
+    margin-left: 22px;
+}
+
+.addtask .entry-content {
+    margin-top: 40px;
+}
+
+.entry-middle>* {
+    margin-bottom: 10px;
+}
+
+@media (max-width:991px) {
+    .entry-middle {
+        justify-content: space-around;
+    }
+
+    .entry-header .btn-main {
+        min-width: auto;
+    }
+
+}
+
+@media (max-width:600px) {
+    .entry-header h1 {
+        font-size: 20px;
+        line-height: 1.1;
+    }
+
+    .entry-header .btn-main span {
+        display: none;
+    }
+}

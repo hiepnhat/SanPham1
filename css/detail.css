@@ -1,0 +1,295 @@
+.detail-page .d1 {
+    margin-bottom: 28px;
+}
+
+.row-detail .inner>*,
+.row-detail h3 {
+    margin-bottom: 25px;
+}
+
+.row-detail .action.edit .btn {
+    background: #F4F9FD;
+}
+
+.create-date {
+    font-size: 14px;
+    color: #7D8592;
+    font-weight: 600;
+}
+
+.row-detail h4 {
+    color: #0A1629;
+    font-size: 16px;
+    margin: 0;
+    opacity: 1;
+}
+
+.checklist input[type="checkbox"]+label input {
+    color: #778CA2;
+}
+
+.checklist input[type="checkbox"]:checked+label input {
+    color: #252631;
+}
+
+.button-attach .btn {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.line {
+    display: block;
+    background: #E4E6E8;
+    height: 1px;
+}
+
+.row-detail .line {
+    margin: 20px -20px;
+    width: calc(100% + 40px);
+}
+
+.view-more a {
+    color: #3F8CFF;
+}
+
+.member-comment img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+}
+
+.action-comment {
+    margin-top: 11px;
+}
+
+.row-detail .inner {
+    border-radius: 24px;
+}
+
+.time-tracking {
+    background: #F3FFF8;
+    border-radius: 14px;
+    padding: 19px;
+    margin: 0 -10px;
+    width: calc(100% + 10px);
+}
+
+.time-tracking .btn-main {
+    box-shadow: 0px 6px 12px rgba(14, 138, 62, 0.26);
+}
+
+.round-process {
+    width: 38px;
+    height: 38px;
+    border: 2px solid rgba(125, 133, 146, 0.202032);
+    border-radius: 50%;
+    position: relative;
+}
+
+.round-process::before {
+    top: -2px;
+    content: '';
+    width: 38px;
+    height: 38px;
+    border: 2px solid #3F8CFF;
+    border-radius: 50%;
+    position: absolute;
+    clip: rect(0px, 45px, 14px, 0px);
+    left: -2px;
+    box-sizing: border-box;
+    transform: rotate(62deg);
+}
+
+.compare-time,
+.position-job {
+    color: #91929E;
+    font-size: 14px;
+}
+
+.info-time {
+    margin: 16px 0 27px;
+}
+
+.info-time .content-time {
+    width: calc(100% - 48px);
+}
+
+.member-active .avatar img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.item-user {
+    background: #F4F9FD;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: table;
+}
+
+.member-active {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.item-user>*+* {
+    padding-left: 12px;
+}
+
+.item-user>* {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.item-user .status {
+    color: #3F8CFF;
+}
+
+.view-more .active {
+    display: none;
+}
+
+.content-more {
+    display: none;
+}
+
+.content-more .line {
+    margin-bottom: 30px;
+}
+
+.confirm .action {
+    margin-top: 30px;
+}
+
+.confirm img {
+    margin-top: 16px;
+}
+
+.confirm .modal-body {
+    max-width: 464px;
+    margin: 20px auto;
+}
+
+.row-detail {
+    color: #0A1629;
+}
+
+.row-detail .description-detail p,
+.row-detail .add-description {
+    opacity: 0.7;
+    margin-top: 0;
+}
+
+.description-detail h4 {
+    margin-bottom: 12px;
+}
+
+.top-project .project-number {
+    color: #91929E;
+}
+
+.top-project h4 {
+    font-size: 18px;
+}
+
+.top-bg {
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.top-bg .info-time {
+    margin: 0;
+    background: #FCFCFC;
+    border-radius: 14px;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    padding: 22px;
+    left: 5%;
+}
+
+.irs {
+    font-family: inherit;
+}
+
+.irs--flat .irs-bar,
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single,
+.irs--flat .irs-bar {
+    background: #0E8A3E;
+}
+
+.irs--flat .irs-from:before,
+.irs--flat .irs-to:before,
+.irs--flat .irs-single:before {
+    border-top-color: #0E8A3E;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+    background: none;
+    color: #030229;
+    font-size: 12px;
+    line-height: 16px;
+    opacity: 0.7;
+}
+
+.irs--flat .irs-bar,
+.irs--flat .irs-line {
+    height: 8px;
+}
+
+.irs--flat .irs-handle {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border: 3px solid #0E8A3E;
+    border-radius: 50%;
+    top: 23px;
+}
+
+.irs--flat .irs-handle>i:first-child {
+    display: none;
+}
+
+.action-logtime {
+    float: right;
+}
+
+.modal .irs {
+    margin-bottom: 20px;
+}
+
+.action-logtime .btn-main {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.timelog {
+    color: #0A1629;
+}
+
+.content-chat>div>div.chat-mes {
+    padding-bottom: 100px;
+}
+
+@media (max-width:1200px) {
+    .row-detail .col4 {
+        width: 25%;
+    }
+
+    .row-detail .line {
+        margin: 20px -16px;
+        width: calc(100% + 30px);
+    }
+}
+
+@media (max-width:767px) {
+    .row-detail .col {
+        width: 100%;
+    }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="calendarProject" id="top">
+<head>
+    <title>AngularUI Calendar for AngularJS</title>
+    <link rel="icon" href="./ui-calendar/favicon.ico" />
+    
+    <link rel="stylesheet" href="https://angular-ui.github.io/ui-calendar/bower_components/bootstrap-css/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://angular-ui.github.io/ui-calendar/bower_components/fullcalendar/dist/fullcalendar.css">
+
+    <script src="https://angular-ui.github.io/ui-calendar/bower_components/jquery/dist/jquery.js"></script>
+    <script src="https://angular-ui.github.io/ui-calendar/bower_components/angular/angular.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.0.js"></script>
+    <script src="https://angular-ui.github.io/ui-calendar/bower_components/moment/moment.js"></script>
+    <script src="https://angular-ui.github.io/ui-calendar/bower_components/fullcalendar/dist/fullcalendar.js"></script>
+    <script src="https://angular-ui.github.io/ui-calendar/bower_components/fullcalendar/dist/gcal.js"></script>
+    <script src="./ui-calendar/calendar.js"></script>
+    <script src="./ui-calendar/calendarDemo.js"></script>
+    <link rel="stylesheet" href="./ui-calendar/calendarDemo.css" />
+</head>
+<body data-spy="scroll">
+    <section id="directives-calendar" ng-controller="CalendarCtrl" class="ng-scope calendar-project">
+        <div class="calendar" ng-model="eventSources" calendar="myCalendar2" ui-calendar="uiConfig.calendar"></div>
+    </section>
+   
+</body>

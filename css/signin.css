@@ -1,0 +1,421 @@
+.input-icons i {
+    position: absolute;
+}
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.icon {
+    padding: 10px;
+    min-width: 40px;
+    right: 5px;
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+}
+
+/*-------*/
+*{
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+.img-width-100 {
+	width: 100%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+body {
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: normal;
+    background: #F4FDFB;
+	margin: 0;
+}
+.ftco-section {
+    padding: 7em 0;
+}
+.container {
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.login-wrap {
+	width: 100%;
+    max-width: 404px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-center {
+    width: 100%;
+}
+h3.sign-in {
+    font-size: 22px;
+    color: #0A1629;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+    margin: 0 0 33px;
+}
+.form-group {
+    position: relative;
+}
+.signup-link {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #030229;
+}
+.signup-link  a {
+    color: #0E8A3E;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.form-control {
+	display: block;
+    width: 100%;
+    padding: 12px 17px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.form-control {
+	background: #fff;
+	color: #000;
+	font-size: 14px;
+	border-radius: 4px;
+	box-shadow: 0px 1px 2px 0px rgb(184 200 224 / 22%);
+	border: 1px solid #D8E0F0;
+}
+.wrap {
+	display: flex;
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 24px;
+    -webkit-box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+    -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+}
+.form-group {
+	position: relative; 
+	margin-bottom: 20px;
+}
+.form-group .label {
+	font-size: 14px;
+	line-height: 24px;
+	color: #7D8592;
+	font-weight: 700;
+	margin-left: 8px;
+}
+.form-group a {
+	color: #7D8592;
+}
+.form-group .checkbox-primary a {
+	color: #0E8A3E;
+	text-decoration: underline;
+}
+.form-group .width-50 a {
+	line-height: 22px;
+    display: block;
+}
+.space-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.form-control::-webkit-input-placeholder {
+	color: #98A9BC;
+	font-family: 'Nunito', sans-serif;
+}
+.form-control::-moz-placeholder {
+	color: #98A9BC; 
+	font-family: 'Nunito', sans-serif;
+}
+.form-control:-ms-input-placeholder {
+	color: #98A9BC; 
+	font-family: 'Nunito', sans-serif;
+}
+.form-control:-moz-placeholder {
+	color: #98A9BC; 
+	font-family: 'Nunito', sans-serif;
+}
+.form-control:focus, .form-control:active {
+    border-color: #0e8a3e;
+	outline: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.social-media {
+	position: relative;
+	width: 100%; 
+}
+.social-media .social-icon {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	font-size: 16px;
+	margin-right: 5px;
+	border-radius: 50%; 
+}
+.social-media .social-icon span {
+	color: #999999; 
+}
+.social-media .social-icon:hover, .social-media .social-icon:focus {
+	background: #e3b04b; 
+}
+.social-media .social-icon:hover span, .social-media .social-icon:focus span {
+	color: #fff; 
+}
+.checkbox-wrap {
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 0;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+}
+  /* Hide the browser's default checkbox */
+.checkbox-wrap input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; 
+}
+  /* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+  /* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "\f0c8";
+    font-family: "FontAwesome";
+    position: absolute;
+    color: #E8ECEF;
+    font-size: 24px;
+    line-height: 20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; 
+}
+@media (prefers-reduced-motion: reduce) {
+    .checkmark:after {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none; 
+    } 
+}
+  /* Show the checkmark when checked */
+.checkbox-wrap input:checked ~ .checkmark:after {
+    display: block;
+    content: "\f14a";
+    font-family: "FontAwesome";
+    color: rgba(0, 0, 0, 0.2); 
+}
+  
+  /* Style the checkmark/indicator */
+.checkbox-primary {
+    color: #7D8592; 
+}
+.checkbox-primary input:checked ~ .checkmark:after {
+    color: #0E8A3E; 
+}
+.btn-success {
+    width: 170px;
+    background-color: #0E8A3E;
+    color: #FFF;
+    margin: 0 auto;
+}
+.btn-success {
+	cursor: pointer;
+	-webkit-box-shadow: 0px 6px 12px 0px #0e8a3e40;
+	box-shadow: 0px 6px 12px 0px #0e8a3e40;
+	font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 12px 20px;
+}
+.btn-success span {
+    margin-left: 10px;
+}
+.btn-row {
+	display: flex;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.btn-row.step-1 {
+	margin-top: 22px;
+}
+.btn-row .btn-back {
+	color: #7D8592;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-back svg {
+	width: 0;
+    transition: 0.3s;
+}
+.btn-row .btn-back:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.btn-row .btn-back:hover svg {
+	width: 24px;
+}
+.text-center {
+    text-align: center;
+}
+.btn-success:hover, .btn-success:active, .btn-success:focus {
+	outline: none; 
+}
+.background-left{
+	width: 50%;
+	background-color: #0E8A3E;
+	padding: 54px 49px 123px
+}
+.logo {
+	margin-left: 45px;
+}
+.vectorp {
+	display: block;
+	width: auto;
+}
+.vectorchu{
+	top:50px;
+	position: absolute;
+	font-size: 2rem;
+	font-weight: bold; 
+	color: #fff;
+	font-family: 'Mukta', sans-serif;
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-left: 3px;
+}
+h2.title{
+    color: #FFF;
+    margin-left: 45px;
+    margin-top: 61px;
+    font-size: 40px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: -0.55px;
+}
+
+
+@media (min-width: 576px){
+	.container {
+	    max-width: 540px;
+	}
+}
+@media (min-width: 768px){
+	.container {
+	    max-width: 720px;
+	}
+}
+@media (min-width: 992px){
+	.container {
+	    max-width: 960px;
+	}
+
+}
+@media (min-width: 1200px){
+	.container {
+	    max-width: 1440px;
+	}
+}
+@media (max-width: 1200px) {
+	.logo, h2.title{
+	    margin-left: 0;
+	}
+	h2.title {
+		font-size: 26px;
+	}
+}
+
+/*----Sing up----*/
+.mult-step {
+    display: none;
+}
+.mult-step.active-tab {
+    display: block;
+}
+
+.progress-bar {
+    width: 100%;
+    max-width: 270px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #E8ECEF;
+    overflow: hidden;
+    margin: 60px auto 0 auto;
+}
+.progress-bar.step-2 {
+	margin-top: 30px;
+}
+.step-3 .btn-row {
+	margin-top: 20px;
+}
+.step-3 .form-group{
+	margin-bottom: 16px;
+}
+.step-0 .progress {
+    width: 33.33%;
+    height: 100%;
+    background-color: #0E8A3E;
+    display: block;
+    transition: 0.5s;
+}
+.step-1 .progress {
+    width: 66.66%;
+}
+.step-2 .progress {
+    width: 100%;
+}
+.up-file input[type="file"]{
+	z-index: 2;
+	opacity: 0;
+    position: absolute;
+    height: 100%;
+}
+.up-file .label{
+	font-weight: 400;
+    color: #778CA2;
+	padding: 33px 24px;
+	margin: 0;
+    text-align: center;
+    width: 100%;
+    border: 1px dashed #CCCCCC;
+    border-radius: 4px;
+}
+.up-file .icon-svg{
+	margin-right: 10px;
+}
+.up-file .icon-svg svg{
+	margin-bottom: -6px;
+}

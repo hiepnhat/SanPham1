@@ -1,0 +1,626 @@
+﻿<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="css/jquery.datepick.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleguide.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/boards.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.plugin.min.js"></script>
+    <script type="text/javascript" src="js/jquery.datepick.js"></script>
+    <script type="text/javascript" src="js/boards.js"></script>
+</head>
+
+<body class="boards-page">
+    <div class="wrapper">
+        <div class="fixed-sidebar">
+            <div class="logo">
+                <a href="/">
+                    <img src="images/logo.svg" title="logo" alt="logo" width="160" height="30" class="logo-expand">
+                    <img src="images/logo-mini.svg" title="logo" alt="logo" width="50" height="50" class="logo-closepand">
+                </a>
+            </div>
+            <div class="main-menu">
+                <ul class="menu">
+                    <li class="item-menu active">
+                        <a href="boards.html">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.53988 2H7.91988C9.32988 2 10.4599 3.15 10.4599 4.561V7.97C10.4599 9.39 9.32988 10.53 7.91988 10.53H4.53988C3.13988 10.53 1.99988 9.39 1.99988 7.97V4.561C1.99988 3.15 3.13988 2 4.53988 2ZM4.53988 13.4697H7.91988C9.32988 13.4697 10.4599 14.6107 10.4599 16.0307V19.4397C10.4599 20.8497 9.32988 21.9997 7.91988 21.9997H4.53988C3.13988 21.9997 1.99988 20.8497 1.99988 19.4397V16.0307C1.99988 14.6107 3.13988 13.4697 4.53988 13.4697ZM19.46 2H16.08C14.67 2 13.54 3.15 13.54 4.561V7.97C13.54 9.39 14.67 10.53 16.08 10.53H19.46C20.86 10.53 22 9.39 22 7.97V4.561C22 3.15 20.86 2 19.46 2ZM16.08 13.4697H19.46C20.86 13.4697 22 14.6107 22 16.0307V19.4397C22 20.8497 20.86 21.9997 19.46 21.9997H16.08C14.67 21.9997 13.54 20.8497 13.54 19.4397V16.0307C13.54 14.6107 14.67 13.4697 16.08 13.4697Z"
+                                    fill="#030229" />
+                            </svg>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="alltask-gird.html">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.33043 2.0004H16.6694C20.0704 2.0004 21.9904 3.9294 22.0004 7.3304V16.6704C22.0004 20.0704 20.0704 22.0004 16.6694 22.0004H7.33043C3.92943 22.0004 2.00043 20.0704 2.00043 16.6704V7.3304C2.00043 3.9294 3.92943 2.0004 7.33043 2.0004ZM12.0494 17.8604C12.4804 17.8604 12.8394 17.5404 12.8794 17.1104V6.9204C12.9194 6.6104 12.7704 6.2994 12.5004 6.1304C12.2194 5.9604 11.8794 5.9604 11.6104 6.1304C11.3394 6.2994 11.1904 6.6104 11.2194 6.9204V17.1104C11.2704 17.5404 11.6294 17.8604 12.0494 17.8604ZM16.6504 17.8604C17.0704 17.8604 17.4294 17.5404 17.4804 17.1104V13.8304C17.5094 13.5094 17.3604 13.2104 17.0894 13.0404C16.8204 12.8704 16.4804 12.8704 16.2004 13.0404C15.9294 13.2104 15.7804 13.5094 15.8204 13.8304V17.1104C15.8604 17.5404 16.2194 17.8604 16.6504 17.8604ZM8.21943 17.1104C8.17943 17.5404 7.82043 17.8604 7.38943 17.8604C6.95943 17.8604 6.59943 17.5404 6.56043 17.1104V10.2004C6.53043 9.8894 6.67943 9.5804 6.95043 9.4104C7.21943 9.2404 7.56043 9.2404 7.83043 9.4104C8.09943 9.5804 8.25043 9.8894 8.21943 10.2004V17.1104Z"
+                                        fill="#030229" />
+                                </g>
+                            </svg>
+                            <span>All tasks</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="alluser.html">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.76 11.62C13.79 11.62 15.45 9.97 15.45 7.94C15.45 5.91 13.8 4.25 11.76 4.25C9.72996 4.25 8.07996 5.9 8.07996 7.94C8.07996 9.98 9.72996 11.62 11.76 11.62Z" fill="#030229"/>
+                                <path d="M14.64 13.05H9.36998C7.00998 13.05 5.09998 14.97 5.09998 17.32V18C5.09998 18.96 5.88998 19.75 6.84998 19.75H17.16C18.12 19.75 18.91 18.96 18.91 18V17.33C18.91 14.97 16.99 13.05 14.64 13.05Z" fill="#030229"/>
+                            </svg>
+                            <span>Users</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="clients.html">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM11.8 6.77C13.58 6.77 15.02 8.21 15.02 9.99C15.02 11.76 13.58 13.21 11.8 13.21C10.03 13.21 8.59 11.76 8.59 9.99C8.59 8.21 10.03 6.77 11.8 6.77ZM17.93 18.08C17.48 18.53 16.97 18.92 16.43 19.25C15.14 20.05 13.62 20.5 12 20.5C10.38 20.5 8.86001 20.05 7.57001 19.25C7.03001 18.92 6.52001 18.53 6.07001 18.08V17.89C6.07001 15.84 7.74 14.17 9.78 14.17H14.22C16.26 14.17 17.93 15.84 17.93 17.89V18.08Z" fill="#030229"/>
+                            </svg>
+                            <span>Clients</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="task-detail.html#logtime">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.85 7.24001L19.8 6.28999C20.09 5.99999 20.09 5.52 19.8 5.23C19.51 4.94 19.03 4.94 18.74 5.23L17.79 6.17999C16.4 5.00999 14.66 4.25 12.75 4.09V3.5H13.03C13.44 3.5 13.78 3.16 13.78 2.75C13.78 2.34 13.44 2 13.03 2H10.97C10.56 2 10.22 2.34 10.22 2.75C10.22 3.16 10.56 3.5 10.97 3.5H11.25V4.09C9.34003 4.25 7.60002 5.00999 6.21002 6.17999L5.26004 5.23C4.97004 4.94 4.49004 4.94 4.20004 5.23C3.91004 5.52 3.91004 5.99999 4.20004 6.28999L5.15002 7.24001C3.83002 8.81001 3.03003 10.82 3.03003 13.03C3.03003 17.97 7.05003 22 12 22C16.95 22 20.97 17.97 20.97 13.03C20.97 10.82 20.17 8.81001 18.85 7.24001ZM15.1 10.99L13.67 12.42C13.73 12.61 13.78 12.81 13.78 13.03C13.78 14.01 12.98 14.81 12 14.81C11.02 14.81 10.22 14.01 10.22 13.03C10.22 12.05 11.02 11.25 12 11.25C12.21 11.25 12.42 11.29 12.6 11.36L14.04 9.92999C14.33 9.62999 14.81 9.62999 15.1 9.92999C15.39 10.22 15.39 10.7 15.1 10.99Z" fill="#030229"/>
+                            </svg>
+                            <span>Log time</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="leave.html">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.1798 4.41C17.1798 3.08 18.2598 2 19.5898 2C20.9198 2 21.9998 3.08 21.9998 4.41C21.9998 5.74 20.9198 6.82 19.5898 6.82C18.2598 6.82 17.1798 5.74 17.1798 4.41ZM13.3297 14.7593L16.2197 11.0303L16.1797 11.0503C16.3397 10.8303 16.3697 10.5503 16.2597 10.3003C16.1507 10.0503 15.9097 9.8803 15.6507 9.8603C15.3797 9.8303 15.1107 9.9503 14.9497 10.1703L12.5307 13.3003L9.75969 11.1203C9.58969 10.9903 9.38969 10.9393 9.18969 10.9603C8.99069 10.9903 8.81069 11.0993 8.68969 11.2593L5.73069 15.1103L5.66969 15.2003C5.49969 15.5193 5.57969 15.9293 5.87969 16.1503C6.01969 16.2403 6.16969 16.3003 6.33969 16.3003C6.57069 16.3103 6.78969 16.1893 6.92969 16.0003L9.43969 12.7693L12.2897 14.9103L12.3797 14.9693C12.6997 15.1393 13.0997 15.0603 13.3297 14.7593ZM15.4497 3.7803C15.4097 4.0303 15.3897 4.2803 15.3897 4.5303C15.3897 6.7803 17.2097 8.5993 19.4497 8.5993C19.6997 8.5993 19.9397 8.5703 20.1897 8.5303V16.5993C20.1897 19.9903 18.1897 22.0003 14.7897 22.0003H7.40069C3.99969 22.0003 1.99969 19.9903 1.99969 16.5993V9.2003C1.99969 5.8003 3.99969 3.7803 7.40069 3.7803H15.4497Z"
+                                        fill="#030229" />
+                                </g>
+                            </svg>
+                            <span>Report</span>
+                            <span class="counter">49</span>
+                        </a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="chat.html">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.3417 9.99996C18.3417 5.40829 14.6 1.66663 10.0084 1.66663C5.40838 1.66663 1.67505 5.40829 1.67505 9.99996C1.67505 14.5916 5.40838 18.3333 10.0084 18.3333C11.2584 18.3333 12.4667 18.0583 13.6001 17.5083L17.5834 18.1C17.7751 18.125 17.9751 18.0583 18.1167 17.9166C18.2501 17.7833 18.3167 17.5833 18.2917 17.3833L17.6751 13.2416C18.1167 12.2 18.3417 11.1166 18.3417 9.99996ZM6.57505 10.8583C6.10839 10.8583 5.72505 10.475 5.72505 9.99996C5.72505 9.52496 6.10839 9.14163 6.57505 9.14163C7.05005 9.14163 7.43338 9.52496 7.43338 9.99996C7.43338 10.475 7.05005 10.8583 6.57505 10.8583ZM10.0001 10.8583C9.53339 10.8583 9.15005 10.475 9.15005 9.99996C9.15005 9.52496 9.53339 9.14163 10.0001 9.14163C10.4751 9.14163 10.8584 9.52496 10.8584 9.99996C10.8584 10.475 10.4751 10.8583 10.0001 10.8583ZM13.4334 10.8583C12.9584 10.8583 12.5751 10.475 12.5751 9.99996C12.5751 9.52496 12.9584 9.14163 13.4334 9.14163C13.9 9.14163 14.2834 9.52496 14.2834 9.99996C14.2834 10.475 13.9 10.8583 13.4334 10.8583Z" fill="#030229"/>
+                            </svg>
+                            <span>Messenger</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info-login">
+                <div class="inner inline-center space-between">
+                    <div class="inline-center">
+                        <div class="avatar">
+                            <img src="images/avatar.png" width="45" height="45">
+                        </div>
+                        <div class="info">
+                            <div class="name">Party Eco</div>
+                            <div class="role">Administrator</div>
+                        </div>
+                    </div>
+                    <a href="#" class="collapsemenu">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.24596 8.35841C6.88138 8.35841 6.5931 8.64175 6.5931 9.00008C6.5931 9.35008 6.88138 9.64175 7.24596 9.64175H12.3332V13.6251C12.3332 15.6667 10.6459 17.3334 8.56016 17.3334H4.43104C2.35376 17.3334 0.666504 15.6751 0.666504 13.6334V4.37508C0.666504 2.32508 2.36224 0.666748 4.43952 0.666748H8.57712C10.6459 0.666748 12.3332 2.32508 12.3332 4.36675V8.35841H7.24596ZM15.3584 6.11692L17.7917 8.54192C17.9167 8.66692 17.9834 8.82525 17.9834 9.00025C17.9834 9.16692 17.9167 9.33359 17.7917 9.45025L15.3584 11.8753C15.2334 12.0003 15.0667 12.0669 14.9084 12.0669C14.7417 12.0669 14.575 12.0003 14.45 11.8753C14.2 11.6253 14.2 11.2169 14.45 10.9669L15.7834 9.64192H12.3334V8.35859H15.7834L14.45 7.03359C14.2 6.78359 14.2 6.37525 14.45 6.12525C14.7 5.86692 15.1084 5.86692 15.3584 6.11692Z"
+                                    fill="#030229" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="entry-header">
+                <h1>Timber' s Workspace</h1>
+            </div>
+            <div class="entry-content">
+                <h4>Party Eco Projects</h4>
+                <div class="row row-project row0">
+                    <div class="col col4">
+                        <div class="inner">
+                            <div class="inline-center info-task">
+                                <div class="icon-round" style="background-color: #0E8A3E;">
+                                    <svg width="15" height="23" viewBox="0 0 15 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.7013 0.897954C9.83858 0.508343 8.89239 0.285706 7.89053 0.285706C6.0538 0.285706 4.35621 0.98144 3.04823 2.26159C1.85157 3.43042 1.128 4.98886 0.961029 6.65862H0.988869V10.5826C0.988869 10.666 1.04453 10.7774 1.12802 10.8052L1.46197 10.9722C1.54546 11.0278 1.57329 11.0557 1.60112 11.167C1.60112 11.2505 1.57327 11.3339 1.51762 11.3896L1.07235 11.7792C1.01669 11.8349 0.988869 11.8905 0.988869 11.974V12.6141C0.988869 12.7254 1.07235 12.8646 1.2115 12.8646L1.65676 12.9202C1.76808 12.9202 1.87941 13.0315 1.87941 13.1707V13.5325C1.87941 13.6438 1.79591 13.7829 1.65676 13.7829L1.2115 13.8386C1.10018 13.8664 0.988869 13.9499 0.988869 14.089V14.7848C0.988869 14.8961 1.07235 15.0352 1.2115 15.0352L1.54545 15.0909C1.62894 15.0909 1.71243 15.1744 1.74026 15.2301C1.76809 15.3135 1.76808 15.397 1.71242 15.4805L1.07235 16.371C1.04452 16.4267 1.01669 16.4545 1.01669 16.5102V16.7885V16.872C1.01669 16.9833 1.10018 17.0946 1.23932 17.1224L1.96289 17.2059C2.07421 17.2338 2.18553 17.3172 2.18553 17.4564V17.8738C2.18553 17.9852 2.10204 18.1243 1.96289 18.1243L1.26716 18.2078C1.15584 18.2356 1.04453 18.3191 1.04453 18.4582V19.0705C1.04453 19.1262 1.07235 19.154 1.10018 19.2096L3.24304 22.2709C3.29869 22.3544 3.35435 22.3544 3.46567 22.3544C3.54916 22.3544 3.63265 22.2987 3.66048 22.243L4.18924 21.3525C4.21707 21.2968 4.21706 21.269 4.21706 21.2412V16.371V7.15955C4.4397 7.13172 4.63451 7.10389 4.82931 7.07606V15.8701V19.6827C4.82931 19.7941 4.91279 19.8775 4.99628 19.9332C5.07977 19.961 5.21891 19.9332 5.27457 19.8497L5.63637 19.321C5.6642 19.2653 5.69201 19.2375 5.69201 19.1818V13.8108C6.41557 14.0612 7.16698 14.2004 7.9462 14.2004C11.7866 14.2004 14.9035 11.0835 14.9035 7.24303C14.8479 4.40444 13.1503 1.95547 10.7013 0.897954ZM8.11317 10.0538C6.58255 10.0538 5.30241 8.80148 5.30241 7.24303C5.30241 5.68459 6.55472 4.43228 8.11317 4.43228C9.64378 4.43228 10.9239 5.68459 10.9239 7.24303C10.9239 8.80148 9.64378 10.0538 8.11317 10.0538Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="name-project">
+                                    <h5>Party Eco dashboard</h5>
+                                    <div class="due-date">
+                                        <svg width="8" height="10" viewBox="0 0 8 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.75 4.58334H1.91667V5.41668H2.75V4.58334ZM4.41667 4.58334H3.58333V5.41668H4.41667V4.58334ZM6.08333 4.58334H5.25V5.41668H6.08333V4.58334ZM6.91667 1.66668H6.5V0.833344H5.66667V1.66668H2.33333V0.833344H1.5V1.66668H1.08333C0.620833 1.66668 0.254167 2.04168 0.254167 2.50001L0.25 8.33334C0.25 8.79168 0.620833 9.16668 1.08333 9.16668H6.91667C7.375 9.16668 7.75 8.79168 7.75 8.33334V2.50001C7.75 2.04168 7.375 1.66668 6.91667 1.66668ZM6.91667 8.33334H1.08333V3.75001H6.91667V8.33334Z"
+                                                fill="#999999" />
+                                        </svg> Due to 28 August 2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="priority inline-center">
+                                <button class="btn orange">Mediun</button>
+                                <button class="btn red">At risk</button>
+                            </div>
+                            <ul class="member-boad inline-center">
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="addmember">
+                                    <a href="addtask.html" class="btn">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 1V9" stroke="white" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M1 5H9" stroke="white" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col col4">
+                        <div class="inner">
+                            <div class="inline-center info-task">
+                                <div class="icon-round" style="background-color: #0E8A3E;">
+                                    <svg width="15" height="23" viewBox="0 0 15 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.7013 0.897954C9.83858 0.508343 8.89239 0.285706 7.89053 0.285706C6.0538 0.285706 4.35621 0.98144 3.04823 2.26159C1.85157 3.43042 1.128 4.98886 0.961029 6.65862H0.988869V10.5826C0.988869 10.666 1.04453 10.7774 1.12802 10.8052L1.46197 10.9722C1.54546 11.0278 1.57329 11.0557 1.60112 11.167C1.60112 11.2505 1.57327 11.3339 1.51762 11.3896L1.07235 11.7792C1.01669 11.8349 0.988869 11.8905 0.988869 11.974V12.6141C0.988869 12.7254 1.07235 12.8646 1.2115 12.8646L1.65676 12.9202C1.76808 12.9202 1.87941 13.0315 1.87941 13.1707V13.5325C1.87941 13.6438 1.79591 13.7829 1.65676 13.7829L1.2115 13.8386C1.10018 13.8664 0.988869 13.9499 0.988869 14.089V14.7848C0.988869 14.8961 1.07235 15.0352 1.2115 15.0352L1.54545 15.0909C1.62894 15.0909 1.71243 15.1744 1.74026 15.2301C1.76809 15.3135 1.76808 15.397 1.71242 15.4805L1.07235 16.371C1.04452 16.4267 1.01669 16.4545 1.01669 16.5102V16.7885V16.872C1.01669 16.9833 1.10018 17.0946 1.23932 17.1224L1.96289 17.2059C2.07421 17.2338 2.18553 17.3172 2.18553 17.4564V17.8738C2.18553 17.9852 2.10204 18.1243 1.96289 18.1243L1.26716 18.2078C1.15584 18.2356 1.04453 18.3191 1.04453 18.4582V19.0705C1.04453 19.1262 1.07235 19.154 1.10018 19.2096L3.24304 22.2709C3.29869 22.3544 3.35435 22.3544 3.46567 22.3544C3.54916 22.3544 3.63265 22.2987 3.66048 22.243L4.18924 21.3525C4.21707 21.2968 4.21706 21.269 4.21706 21.2412V16.371V7.15955C4.4397 7.13172 4.63451 7.10389 4.82931 7.07606V15.8701V19.6827C4.82931 19.7941 4.91279 19.8775 4.99628 19.9332C5.07977 19.961 5.21891 19.9332 5.27457 19.8497L5.63637 19.321C5.6642 19.2653 5.69201 19.2375 5.69201 19.1818V13.8108C6.41557 14.0612 7.16698 14.2004 7.9462 14.2004C11.7866 14.2004 14.9035 11.0835 14.9035 7.24303C14.8479 4.40444 13.1503 1.95547 10.7013 0.897954ZM8.11317 10.0538C6.58255 10.0538 5.30241 8.80148 5.30241 7.24303C5.30241 5.68459 6.55472 4.43228 8.11317 4.43228C9.64378 4.43228 10.9239 5.68459 10.9239 7.24303C10.9239 8.80148 9.64378 10.0538 8.11317 10.0538Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="name-project">
+                                    <h5>Party Eco dashboard</h5>
+                                    <div class="due-date">
+                                        <svg width="8" height="10" viewBox="0 0 8 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.75 4.58334H1.91667V5.41668H2.75V4.58334ZM4.41667 4.58334H3.58333V5.41668H4.41667V4.58334ZM6.08333 4.58334H5.25V5.41668H6.08333V4.58334ZM6.91667 1.66668H6.5V0.833344H5.66667V1.66668H2.33333V0.833344H1.5V1.66668H1.08333C0.620833 1.66668 0.254167 2.04168 0.254167 2.50001L0.25 8.33334C0.25 8.79168 0.620833 9.16668 1.08333 9.16668H6.91667C7.375 9.16668 7.75 8.79168 7.75 8.33334V2.50001C7.75 2.04168 7.375 1.66668 6.91667 1.66668ZM6.91667 8.33334H1.08333V3.75001H6.91667V8.33334Z"
+                                                fill="#999999" />
+                                        </svg> Due to 28 August 2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="priority inline-center">
+                                <button class="btn cyan">High</button>
+                                <button class="btn yellow">On Track</button>
+                            </div>
+                            <ul class="member-boad inline-center">
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="addmember">
+                                    <a href="addtask.html" class="btn">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 1V9" stroke="white" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M1 5H9" stroke="white" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col col4">
+                        <div class="inner add_project  clickpopup" data-target=".addproject">
+                            Create new project
+                        </div>
+                    </div>
+                </div>
+                <h4>Multitask Projects</h4>
+                <div class="row row-project row1">
+                    <div class="col col4">
+                        <div class="inner">
+                            <div class="inline-center info-task">
+                                <div class="icon-round" style="background-color: #26C0E2;">
+                                    <svg width="28" height="25" viewBox="0 0 28 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.49992 12C7.12491 12 6 11.1 6 10.0001C6 8.89996 7.12491 8 8.49992 8C9.87492 8 11 8.89996 11 10.0001C11 11.1 9.87492 12 8.49992 12Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M28 6.90699C28 3.10815 24.625 0 20.5 0H20.4998C16.375 0 13 3.10815 13 6.90699V17C13 17 27.9986 15.4621 28 6.90794C28 6.90762 28 6.90731 28 6.90699Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.66668 21.3694C4.90012 21.3694 4.27313 20.7869 4.27313 20.0752C4.27313 19.3634 4.90012 18.7811 5.66668 18.7811C6.43306 18.7811 7.06005 19.3634 7.06005 20.0752C7.06005 20.7869 6.43306 21.3694 5.66668 21.3694ZM0.363647 20.0741C0.363647 20.0744 0.363647 20.0749 0.363647 20.0752C0.363647 22.7838 2.74992 25 5.66668 25C8.58326 25 10.9697 22.7838 10.9697 20.0752V12.8788C10.9697 12.8788 0.365036 13.9753 0.363647 20.0741Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="name-project">
+                                    <h5>Party Eco dashboard</h5>
+                                    <div class="due-date">
+                                        <svg width="8" height="10" viewBox="0 0 8 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.75 4.58334H1.91667V5.41668H2.75V4.58334ZM4.41667 4.58334H3.58333V5.41668H4.41667V4.58334ZM6.08333 4.58334H5.25V5.41668H6.08333V4.58334ZM6.91667 1.66668H6.5V0.833344H5.66667V1.66668H2.33333V0.833344H1.5V1.66668H1.08333C0.620833 1.66668 0.254167 2.04168 0.254167 2.50001L0.25 8.33334C0.25 8.79168 0.620833 9.16668 1.08333 9.16668H6.91667C7.375 9.16668 7.75 8.79168 7.75 8.33334V2.50001C7.75 2.04168 7.375 1.66668 6.91667 1.66668ZM6.91667 8.33334H1.08333V3.75001H6.91667V8.33334Z"
+                                                fill="#999999" />
+                                        </svg> Due to 28 August 2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="priority inline-center">
+                                <button class="btn cyan">High</button>
+                            </div>
+                            <ul class="member-boad inline-center">
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="addmember">
+                                    <a href="addtask.html" class="btn">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 1V9" stroke="white" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M1 5H9" stroke="white" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col col4">
+                        <div class="inner add_project  clickpopup" data-target=".addproject">
+                            Create new project
+                        </div>
+                    </div>
+                </div>
+                <h4>iTask Management Projects</h4>
+                <div class="row row-project row1">
+                    <div class="col col4">
+                        <div class="inner">
+                            <div class="inline-center info-task">
+                                <div class="icon-round" style="background-color: #EFB113;">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M13.5066 7.79191L13.4969 3.00276C13.4974 1.34482 12.1559 0.00045541 10.5007 3.80755e-05C8.84552 -0.000379259 7.50339 1.34331 7.50297 3.00125L7.49337 7.79191L1.09998 11.0137C0.425487 11.3535 0 12.0444 0 12.7997V13.8043C0 14.426 0.561381 14.8971 1.17369 14.7891L7.49245 13.6746V16.2007L6.45276 17.4579C6.15621 17.8164 5.99396 18.2672 5.99396 18.7325V19.7663C5.99396 20.4018 6.57916 20.8762 7.20099 20.7446L10.5007 20.0463L13.7769 20.7431C14.399 20.8754 14.9849 20.401 14.9849 19.765V18.7256C14.9849 18.2645 14.8256 17.8175 14.5339 17.4604L13.5075 16.2039V13.6746L19.8263 14.7891C20.4386 14.8971 21 14.426 21 13.8043V12.7997C21 12.0444 20.5745 11.3535 19.9 11.0137L13.5066 7.79191Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="name-project">
+                                    <h5>iTask Website Develope</h5>
+                                    <div class="due-date">
+                                        <svg width="8" height="10" viewBox="0 0 8 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.75 4.58334H1.91667V5.41668H2.75V4.58334ZM4.41667 4.58334H3.58333V5.41668H4.41667V4.58334ZM6.08333 4.58334H5.25V5.41668H6.08333V4.58334ZM6.91667 1.66668H6.5V0.833344H5.66667V1.66668H2.33333V0.833344H1.5V1.66668H1.08333C0.620833 1.66668 0.254167 2.04168 0.254167 2.50001L0.25 8.33334C0.25 8.79168 0.620833 9.16668 1.08333 9.16668H6.91667C7.375 9.16668 7.75 8.79168 7.75 8.33334V2.50001C7.75 2.04168 7.375 1.66668 6.91667 1.66668ZM6.91667 8.33334H1.08333V3.75001H6.91667V8.33334Z"
+                                                fill="#999999" />
+                                        </svg> Due to 28 August 2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="priority inline-center">
+                                <button class="btn orange">Mediun</button>
+                                <button class="btn red">At risk</button>
+                            </div>
+                            <ul class="member-boad inline-center">
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="addmember">
+                                    <a href="addtask.html" class="btn">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 1V9" stroke="white" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M1 5H9" stroke="white" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col col4">
+                        <div class="inner">
+                            <div class="inline-center info-task">
+                                <div class="icon-round" style="background-color: #EFB113;">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M13.5066 7.79191L13.4969 3.00276C13.4974 1.34482 12.1559 0.00045541 10.5007 3.80755e-05C8.84552 -0.000379259 7.50339 1.34331 7.50297 3.00125L7.49337 7.79191L1.09998 11.0137C0.425487 11.3535 0 12.0444 0 12.7997V13.8043C0 14.426 0.561381 14.8971 1.17369 14.7891L7.49245 13.6746V16.2007L6.45276 17.4579C6.15621 17.8164 5.99396 18.2672 5.99396 18.7325V19.7663C5.99396 20.4018 6.57916 20.8762 7.20099 20.7446L10.5007 20.0463L13.7769 20.7431C14.399 20.8754 14.9849 20.401 14.9849 19.765V18.7256C14.9849 18.2645 14.8256 17.8175 14.5339 17.4604L13.5075 16.2039V13.6746L19.8263 14.7891C20.4386 14.8971 21 14.426 21 13.8043V12.7997C21 12.0444 20.5745 11.3535 19.9 11.0137L13.5066 7.79191Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="name-project">
+                                    <h5>iTask Website Develope</h5>
+                                    <div class="due-date">
+                                        <svg width="8" height="10" viewBox="0 0 8 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.75 4.58334H1.91667V5.41668H2.75V4.58334ZM4.41667 4.58334H3.58333V5.41668H4.41667V4.58334ZM6.08333 4.58334H5.25V5.41668H6.08333V4.58334ZM6.91667 1.66668H6.5V0.833344H5.66667V1.66668H2.33333V0.833344H1.5V1.66668H1.08333C0.620833 1.66668 0.254167 2.04168 0.254167 2.50001L0.25 8.33334C0.25 8.79168 0.620833 9.16668 1.08333 9.16668H6.91667C7.375 9.16668 7.75 8.79168 7.75 8.33334V2.50001C7.75 2.04168 7.375 1.66668 6.91667 1.66668ZM6.91667 8.33334H1.08333V3.75001H6.91667V8.33334Z"
+                                                fill="#999999" />
+                                        </svg> Due to 28 August 2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="priority inline-center">
+                                <button class="btn orange">Mediun</button>
+                                <button class="btn red">At risk</button>
+                            </div>
+                            <ul class="member-boad inline-center">
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="addmember">
+                                    <a href="addtask.html" class="btn">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 1V9" stroke="white" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M1 5H9" stroke="white" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col col4">
+                        <div class="inner">
+                            <div class="inline-center info-task">
+                                <div class="icon-round" style="background-color: #EFB113;">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M13.5066 7.79191L13.4969 3.00276C13.4974 1.34482 12.1559 0.00045541 10.5007 3.80755e-05C8.84552 -0.000379259 7.50339 1.34331 7.50297 3.00125L7.49337 7.79191L1.09998 11.0137C0.425487 11.3535 0 12.0444 0 12.7997V13.8043C0 14.426 0.561381 14.8971 1.17369 14.7891L7.49245 13.6746V16.2007L6.45276 17.4579C6.15621 17.8164 5.99396 18.2672 5.99396 18.7325V19.7663C5.99396 20.4018 6.57916 20.8762 7.20099 20.7446L10.5007 20.0463L13.7769 20.7431C14.399 20.8754 14.9849 20.401 14.9849 19.765V18.7256C14.9849 18.2645 14.8256 17.8175 14.5339 17.4604L13.5075 16.2039V13.6746L19.8263 14.7891C20.4386 14.8971 21 14.426 21 13.8043V12.7997C21 12.0444 20.5745 11.3535 19.9 11.0137L13.5066 7.79191Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="name-project">
+                                    <h5>iTask Website Develope</h5>
+                                    <div class="due-date">
+                                        <svg width="8" height="10" viewBox="0 0 8 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2.75 4.58334H1.91667V5.41668H2.75V4.58334ZM4.41667 4.58334H3.58333V5.41668H4.41667V4.58334ZM6.08333 4.58334H5.25V5.41668H6.08333V4.58334ZM6.91667 1.66668H6.5V0.833344H5.66667V1.66668H2.33333V0.833344H1.5V1.66668H1.08333C0.620833 1.66668 0.254167 2.04168 0.254167 2.50001L0.25 8.33334C0.25 8.79168 0.620833 9.16668 1.08333 9.16668H6.91667C7.375 9.16668 7.75 8.79168 7.75 8.33334V2.50001C7.75 2.04168 7.375 1.66668 6.91667 1.66668ZM6.91667 8.33334H1.08333V3.75001H6.91667V8.33334Z"
+                                                fill="#999999" />
+                                        </svg> Due to 28 August 2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="priority inline-center">
+                                <button class="btn orange">Mediun</button>
+                                <button class="btn red">At risk</button>
+                            </div>
+                            <ul class="member-boad inline-center">
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="member">
+                                    <img src="images/member.png" width="28px" height="28px" title="member">
+                                </li>
+                                <li class="addmember">
+                                    <a href="addtask.html" class="btn">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 1V9" stroke="white" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M1 5H9" stroke="white" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col col4">
+                        <div class="inner add_project  clickpopup" data-target=".addproject">
+                            Create new project
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal addproject" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="inner">
+                        <h2 class="title-popup">
+                            Add Project
+                        </h2>
+                        <form name="add_project" method="POST">
+                            <div class="form-images">
+                                <div class="form">
+                                    <div class="hang0"><label class="label" for="name">Project Name</label>
+                                        <input type="text" class="form-control" placeholder="Project Name" required>
+                                    </div>
+                                    <div class="ngang">
+                                        <div class="hang0">
+                                            <label class="label" for="name">Starts</label>
+                                            <div class="input-icons">
+                                                <input type="text" class="datepicker" placeholder="Select Date"
+                                                    required>
+                                                <!-- <i class="bi bi-calendar inline"></i> -->
+                                            </div>
+                                        </div>
+
+                                        <div class="hang0">
+                                            <label class="label" for="name">Dead Line</label>
+                                            <div class="input-icons">
+                                                <input type="text" class="datepicker" placeholder="Select Date"
+                                                    required>
+
+                                                <!-- <i class="bi bi-calendar inline"></i> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hang0"><label class="label" for="name">Priority</label>
+                                        <div class="input-icons">
+                                            <select name="priority" class="form-p" required>
+                                                <option value="medium">Medium</option>
+                                                <option value="larger">Larger</option>
+                                                <option value="small">Small</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="hang0"><label class="label" for="name">Description</label>
+                                        <textarea class="des"
+                                            placeholder="Add some description of the project"></textarea>
+                                    </div>
+
+                                </div>
+                                <div class="select-image">
+                                    <div class="phananh">
+                                        <h4 class="image">Select image</h4>
+                                        <p class="phude">Select or upload an avatar for the</br> project (available
+                                            formats: jpg, png)
+                                        </p>
+                                        <ul class="gird-anh inline-center">
+                                            <li>
+                                                <img class="anhdaidien" src="03/PartyEco/Desktop/All Projects/1.png"
+                                                    alt="">
+                                            </li>
+                                            <li>
+                                                <img class="anhdaidien" src="03/PartyEco/Desktop/All Projects/2.png"
+                                                    alt="">
+                                            </li>
+                                            <li>
+                                                <img class="anhdaidien" src="03/PartyEco/Desktop/All Projects/20.png"
+                                                    alt="">
+                                            </li>
+                                            <li>
+                                                <img class="anhdaidien"
+                                                    src="03/PartyEco/Desktop/All Projects/Image-10.png" alt="">
+                                            </li>
+                                            <li>
+                                                <img class="anhdaidien"
+                                                    src="03/PartyEco/Desktop/All Projects/Image-1.png" alt="">
+                                            </li>
+                                            <li>
+                                                <img class="anhdaidien"
+                                                    src="03/PartyEco/Desktop/All Projects/Image-2.png" alt="">
+                                            </li>
+                                            <li>
+                                                <img class="anhdaidien"
+                                                    src="03/PartyEco/Desktop/All Projects/Image-3.png" alt="">
+                                            </li>
+                                            <li>
+                                                <img class="anhdaidien"
+                                                    src="03/PartyEco/Desktop/All Projects/Image-4.png" alt="">
+                                            </li>
+                                            <li>
+                                                <img class="anhdaidien"
+                                                    src="03/PartyEco/Desktop/All Projects/Image-5.png" alt="">
+                                            </li>
+                                            <li>
+                                                <img class="anhdaidien"
+                                                    src="03/PartyEco/Desktop/All Projects/Image-6.png" alt="">
+                                            </li>
+                                            <li>
+                                                <img class="anhdaidien" src="03/PartyEco/Desktop/All Projects/Image.png"
+                                                    alt="">
+                                            </li>
+                                            <li>
+                                                <img class="anhdaidien"
+                                                    src="03/PartyEco/Desktop/All Projects/Upload Image.png" alt="">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="action">
+                                        <button class="btn attach">
+                                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M11.2412 1.46512C13.1947 -0.488373 16.362 -0.488373 18.3154 1.46512C20.2097 3.35941 20.2671 6.395 18.4873 8.35882L18.3151 8.53972L9.11544 17.7293C7.94344 18.9013 6.04324 18.9013 4.87123 17.7293C3.7461 16.6042 3.7011 14.808 4.73658 13.6288L4.87165 13.4847L13.3616 5.0047C13.7524 4.61441 14.3856 4.61478 14.7759 5.00553C15.1361 5.36623 15.1635 5.93348 14.8583 6.32559L14.775 6.41975L6.28544 14.8993C5.89448 15.2903 5.89448 15.9242 6.28544 16.3151C6.64633 16.676 7.21419 16.7038 7.60722 16.3981L7.70161 16.3147L16.9012 7.12512C18.0737 5.95268 18.0737 4.05177 16.9012 2.87933C15.7757 1.75379 13.9788 1.70877 12.7995 2.74427L12.6554 2.87933L3.46544 12.0693C1.51152 14.0233 1.51152 17.1912 3.46544 19.1451C5.36016 21.0398 8.39642 21.0972 10.3603 19.3174L10.5412 19.1451L19.7312 9.95512C20.1218 9.56459 20.7549 9.56459 21.1454 9.95512C21.5059 10.3156 21.5337 10.8828 21.2286 11.2751L21.1454 11.3693L11.9554 20.5593C9.22047 23.2943 4.7862 23.2943 2.05123 20.5593C-0.621585 17.8865 -0.68233 13.5908 1.86899 10.8442L2.05123 10.6551L11.2412 1.46512Z"
+                                                    fill="#6D5DD3" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn link">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M20.1282 1.75736C17.8138 -0.557042 14.0715 -0.589561 11.7173 1.68427L9.98695 3.4044L9.90348 3.49836C9.59731 3.88976 9.62339 4.45707 9.98282 4.8186C10.3722 5.21026 11.0054 5.21211 11.397 4.82273L13.117 3.11273L13.2816 2.96241C14.8471 1.61026 17.2242 1.68184 18.714 3.17157C20.2569 4.71451 20.2786 7.20933 18.7627 8.77885L15.7749 11.7665L15.6066 11.9253C14.8026 12.6417 13.7405 13.0058 12.6601 12.9284C11.5025 12.8455 10.4379 12.2639 9.74275 11.3346C9.41195 10.8923 8.78526 10.802 8.34301 11.1328C7.90076 11.4636 7.81042 12.0903 8.14122 12.5325C9.18397 13.9266 10.7808 14.799 12.5172 14.9233C14.2536 15.0477 15.9585 14.4117 17.1892 13.1805L20.1891 10.1807L20.3648 9.99102C22.4718 7.61803 22.3817 4.01086 20.1282 1.75736ZM13.7428 9.33458C12.7 7.94055 11.1032 7.06814 9.36677 6.94378L9.09293 6.93044C7.4522 6.88801 5.86074 7.52017 4.69475 8.68658L1.69488 11.6865L1.51922 11.8761C-0.587842 14.2491 -0.497709 17.8563 1.75579 20.1098C4.07019 22.4242 7.81243 22.4567 10.1667 20.1828L11.8891 18.4607L11.9723 18.3665C12.2773 17.9742 12.2496 17.4069 11.8891 17.0465C11.4986 16.6559 10.8654 16.6559 10.4749 17.0465L8.76488 18.7565L8.60053 18.9066C7.03683 20.2569 4.65973 20.1853 3.17 18.6955C1.62707 17.1526 1.60539 14.6578 3.12128 13.0883L6.10909 10.1007L6.27735 9.94181C7.08136 9.22546 8.14346 8.86129 9.2239 8.93867C10.3815 9.02158 11.4461 9.60318 12.1412 10.5325C12.472 10.9748 13.0987 11.0651 13.541 10.7343C13.9832 10.4035 14.0736 9.77683 13.7428 9.33458Z"
+                                                    fill="#15C0E6" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="submit-form">
+                                <button type="submit" class="btn-main">Create Project</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
